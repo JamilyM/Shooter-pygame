@@ -102,7 +102,7 @@ while rodando:
 
     if tecla[pygame.K_SPACE]:
         triggered = True
-        if pontos > 5:
+        if pontos > 5 and 10 >= pontos:
             vel_missil_x = 2.5
         elif pontos > 10:
             vel_missil_x = 3.5
@@ -136,7 +136,7 @@ while rodando:
 
     # movimento
 
-    if pontos > 5:
+    if pontos > 5 and 10 >= pontos:
         pos_alien_x -= 2
         x -= 3
     elif pontos > 10:
